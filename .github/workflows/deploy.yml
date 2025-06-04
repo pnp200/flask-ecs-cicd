@@ -22,7 +22,7 @@ jobs:
       - name: Build and Push Docker image to ECR
         run: |
           docker buildx build \
-            --platform linux/arm64,linux/amd64 \
+            --platform linux/amd64 \
             -t ${{ vars.ECR_REPO }}:latest \
             --push .
       - name: Force ECS service to redeploy
