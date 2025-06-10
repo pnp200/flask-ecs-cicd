@@ -1,9 +1,0 @@
-version: 0.0
-Resources:
-  - TargetService:
-      Type: AWS::ECS::Service
-      Properties:
-        TaskDefinition: "arn:aws:ecs:ap-southeast-1:226030785019:task-definition/flask-ecs-task:2"
-        LoadBalancerInfo:
-          ContainerName: "flask-container"
-          ContainerPort: 5000
