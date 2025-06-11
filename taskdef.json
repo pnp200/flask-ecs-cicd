@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "flask-container",
-            "image": "flask-ecs-cicd",
+            "image": "226030785019.dkr.ecr.ap-southeast-1.amazonaws.com/flask-ecs-cicd:latest",
             "cpu": 0,
             "portMappings": [
                 {
@@ -13,14 +13,27 @@
                     "protocol": "tcp"
                 }
             ],
-            "essential": true
+            "essential": true,
+            "environment": [],
+            "environmentFiles": [],
+            "mountPoints": [],
+            "volumesFrom": [],
+            "ulimits": [],
+            "systemControls": []
         }
     ],
     "executionRoleArn": "arn:aws:iam::226030785019:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
+    "volumes": [],
+    "placementConstraints": [],
     "requiresCompatibilities": [
         "FARGATE"
     ],
     "cpu": "512",
-    "memory": "1024"
+    "memory": "1024",
+    "runtimePlatform": {
+        "cpuArchitecture": "X86_64",
+        "operatingSystemFamily": "LINUX"
+    },
+    "enableFaultInjection": false
 }
