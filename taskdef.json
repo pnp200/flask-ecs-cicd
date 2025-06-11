@@ -3,7 +3,7 @@
     "containerDefinitions": [
         {
             "name": "flask-container",
-            "image": "226030785019.dkr.ecr.ap-southeast-1.amazonaws.com/flask-ecs-cicd:latest",
+            "image": "flask-ecs-cicd",
             "cpu": 0,
             "portMappings": [
                 {
@@ -13,7 +13,7 @@
                     "protocol": "tcp"
                 }
             ],
-            "essential": true,
+            "essential": true
         }
     ],
     "executionRoleArn": "arn:aws:iam::226030785019:role/ecsTaskExecutionRole",
