@@ -1,0 +1,6 @@
+[
+  {
+    "name": "flask-container",
+    "imageUri": "226030785019.dkr.ecr.ap-southeast-1.amazonaws.com/flask-ecs-cicd:latest"
+  }
+]
